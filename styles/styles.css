@@ -1,2 +1,18 @@
+@charset "UTF-8";
+body {
+    color:#f8f8fd; /* to change colour of text, change the 'white' here */
+    background-color:#28187a; /* to change colour of pages, change the 'black' here */
+    font-family: Arial; /* to change the font, change the Arial here */
+}
+
+a{
+	color:#f8f8fd; /*change this to something else to alter the colour of links */
+}
 /* CSS Document */
+
+.centredvideo{
+	width:640px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
