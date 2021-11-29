@@ -1,15 +1,37 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Home</title>
-<link href="styles/styles.css" rel="stylesheet" type="text/css">
-<link href="styles/styles.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<nav><a href="rick.html">don't click me</a> </nav>
-<h1>"hello"</h1>
-<p>This is a testing site don't click that button</p>
-<p>hello i am conner</p>
-</body>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link href="styles/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<nav><a href="rick.html">don't click me</a> </nav>
+		<h1>"hello"</h1>
+		<p>This is a testing site don't click that button</p>
+		<p>hello i am conner</p>
+		<div id="myLoopHolder">
+			<vue-perfectlooper v-bind="loop"></vue-perfectlooper>
+		</div>
+		<script src="https://unpkg.com/vue"></script>
+		<script src="https://unpkg.com/vue-perfectlooper"></script>
+		<script>
+			Vue.component('vue-perfectlooper', VuePerfectlooper);
+			var amazonCDN = 'https://aws-website-videonuclearpixelcom-tgl8t.s3.amazonaws.com/content/';
+			new Vue({
+				el: '#myLoopHolder',
+				data: {
+					loop: {
+						"id": "crusaderarts_red_room_tribute-24",
+						"poster": amazonCDN + "crusaderarts_red_room_tribute-24-preview.jpg",
+						"src": amazonCDN + "crusaderarts_red_room_tribute-24-1920x1080/",
+						"frames": 24
+					}
+				}
+			});
+		</script>
+	</body>
 </html>
